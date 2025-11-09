@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Player Entry Alert — Node API + React client (single service)",
   "scripts": {
-    "postinstall": "npm --prefix client ci || npm --prefix client install",
+    "postinstall": "npm --prefix client install --no-audit --no-fund",
     "build": "npm --prefix client run build",
     "start": "node server.js",
     "dev": "concurrently -n server,client -c green,cyan \"node server.js\" \"npm --prefix client start\""
